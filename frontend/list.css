@@ -86,6 +86,10 @@ ul > li > a:hover{
     flex-shrink: 2;
 }
 
+.card:hover{
+    cursor: pointer;
+}
+
 .post-title{
     color: rgb(1, 172, 251);
     padding: 1rem;
