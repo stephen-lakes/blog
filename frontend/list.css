@@ -30,7 +30,8 @@ html {
 }
 
 .brand{
-    
+    color: orange;
+    font-size: 18px;
 }
 
 .nav-toggle{
@@ -56,7 +57,7 @@ html {
     padding: 0 0 0 48px;
 }
 ul > li > a:hover{
-    text-decoration: underline solid whitesmoke 2px;
+    text-decoration: underline solid orange 2px;
     text-underline-offset: 5px;
 }
 
@@ -64,6 +65,9 @@ ul > li > a:hover{
 
 
 /*-- MAIN POST LIST STARTS HERE -- */
+.stephen-margin-auto {
+    margin: 0 auto;
+}
 .main-post-list{
 
 }
@@ -85,7 +89,7 @@ ul > li > a:hover{
 .post-title{
     color: rgb(1, 172, 251);
     padding: 1rem;
-    border: 1px solid green;
+    border: 1px solid rgb(124, 124, 124);
 }
 
 .align-span-items-center{
@@ -107,7 +111,7 @@ ul > li > a:hover{
 
 .author{
     margin: auto 0.5rem auto 0.2rem;
-    border: 1px solid brown;
+    border: 1px solid rgb(124, 124, 124);
 }
 
 .date-posted{
@@ -159,7 +163,6 @@ ul > li > a:hover{
     display: inline-block;
     border:1px solid goldenrod;
     width: 20%;
-    padding: 10px;
 }
 
 .stephen-bold {
@@ -207,7 +210,6 @@ ul > li > a:hover{
         float: right;
     }
     .top-header{
-        border: 1px solid pink;
         width: 80%;
     }
 }
@@ -236,9 +238,18 @@ ul > li > a:hover{
     }
 }
 
-@media screen and (max-width: 927px) and (min-width: 802px) {
+@media screen and (max-width: 927px) and (min-width: 674px) {
     #content {
-        margin: 10%;
+        justify-content: left;
+        padding: 0 0 0 10%;
+    }
+    
+}
+
+
+@media screen and (max-width: 927px) and (min-width: 800px) {
+    .stephen-margin-auto {
+        padding: 0 20% 0 20%;
     }
     
 }
@@ -255,7 +266,6 @@ ul > li > a:hover{
     }
 
     #content {
-        border: 1px solid red;
         box-sizing: content-box;
         padding: 0;
     }
