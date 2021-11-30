@@ -195,11 +195,7 @@ ul > li > a:hover{
 }
 
 
-@media screen and (max-width:961px) {
-    #content{
-        margin: 1rem 1%;
-    }
-}
+
 
 @media screen and (max-width: 799px) {
     .nav-links {
@@ -218,20 +214,45 @@ ul > li > a:hover{
     }
 }
 
+/* CUSTOM MEDIA QUERY */
 @media screen and (max-width: 205px) {
     .author, .date-posted{
         margin: 2px 10%;        
     }
+
+    #content {
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    #content {
+        padding: 0;
+    }
+
+    .top-header{
+        width: 90%;
+       margin: 10px 5%;
+       padding: auto;
+    }
 }
 
 
+/* STANDARD MEDIA QUERY*/
 
 @media (min-width:320px)  { 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    .top-header{
+        width: 90%;
+        margin: 10px 5%;
+        padding: auto;
+    }
+
     #content {
         border: 1px solid red;
         box-sizing: content-box;
-        
+        padding: 0;
     }
 
     .stephen-column-4 {
