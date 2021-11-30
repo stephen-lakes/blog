@@ -195,8 +195,6 @@ ul > li > a:hover{
 }
 
 
-
-
 @media screen and (max-width: 799px) {
     .nav-links {
         display: none;
@@ -236,6 +234,13 @@ ul > li > a:hover{
        margin: 10px 5%;
        padding: auto;
     }
+}
+
+@media screen and (max-width: 927px) and (min-width: 802px) {
+    #content {
+        margin: 10%;
+    }
+    
 }
 
 
