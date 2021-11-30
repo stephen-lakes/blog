@@ -283,9 +283,39 @@ ul > li > a:hover{
 
 @media (min-width:801px)  { 
     /* tablet, landscape iPad, lo-res laptops ands desktops */
+    #content {
+        padding: auto;
+    }
+    
+    .card {
+        flex-basis: 18rem;
+    }
+
+    .stephen-column-4 {
+        display: inline-block;
+        border:1px solid goldenrod;
+        width: 20%;
+        padding: 10px;
+    }
 }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1025px) { 
+    /* big landscape tablets, laptops, and desktops */
+    #content {
+        padding: 2%;
+    }
+    
+}
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+
+
+
+
+
+
+
 
 
 /* Edit: Refined to work better with 960 grids: */
