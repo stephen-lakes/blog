@@ -1,0 +1,276 @@
+*{
+    padding:0;
+    margin: 0;
+    border: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+.wrapper, body{
+    background-color: #232323;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* HEADER SECTION STARTS HERE */
+.container{
+    border-bottom: 2px solid white;
+}
+.top-header{
+    padding: 15px 0;
+    margin: 0 10%;
+}
+
+.brand{
+    
+}
+
+.nav-toggle{
+    border: 2px solid rgb(124, 124, 124);
+    border-radius: 3px;
+    width: 40px;
+    display: none;
+}
+
+.dash{
+    display: block;
+    border: 2px solid rgb(124, 124, 124);
+    width: 25px;
+    margin: 5px;
+}
+
+.nav-links{
+    float: right;
+}
+
+.nav-links > ul > li{
+    float: left;
+    padding: 0 0 0 48px;
+}
+ul > li > a:hover{
+    text-decoration: underline solid whitesmoke 2px;
+    text-underline-offset: 5px;
+}
+
+/* HEADER SECTION ENDS HERE */
+
+
+/*-- MAIN POST LIST STARTS HERE -- */
+.main-post-list{
+
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0 6.5%;
+}
+
+.card{
+    flex-basis: 19rem;
+    border: 1.9px solid rgb(124, 124, 124);
+    border-radius: 0.05rem;
+    margin: 0.9%;
+    flex-shrink: 2;
+}
+
+.post-title{
+    color: rgb(1, 172, 251);
+    padding: 1rem;
+    border: 1px solid green;
+}
+
+.align-span-items-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.2rem;  
+}
+
+.profile-pic-padder{
+    margin: auto 0 auto 1rem;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.author{
+    margin: auto 0.5rem auto 0.2rem;
+    border: 1px solid brown;
+}
+
+.date-posted{
+    margin: auto 0 auto 0.8rem;
+    border: 1px solid orange;
+}
+
+.post-description{
+    padding: 0 0 1rem 1rem;
+}
+
+.post-tags-span-padder{
+    margin: 0.8rem;
+}
+
+.post-tags{
+    display: inline-block;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 0.3rem 5px;
+    margin: 3px 0;
+}
+
+/*-- MAIN POST LIST ENDS HERE -- */
+
+
+.stephen-footer{
+    text-align: left;
+}
+
+.stephen-footer-body{
+    padding: 10%;
+    background-color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.stephen-columns {
+    clear: both;
+    padding: 10%;
+}
+.stephen-footer-menu-list {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    vertical-align: text-top;
+
+}
+.stephen-column-4 {
+    display: inline-block;
+    border:1px solid goldenrod;
+    width: 20%;
+    padding: 10px;
+}
+
+.stephen-bold {
+    color: #2c2b2b;
+}
+
+.stephen-plain-list > li > a{
+    color: black;
+}
+
+.stephen-plain-list > li > a:hover {
+    text-decoration: underline 1px solid rgb(1, 172, 251);
+}
+
+.stephen-textcolumns-small-2 > li{
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.stephen-textcolumns-small-2 > li > a{
+    padding: 5px;
+}
+
+.stephen-padding-bottom-0 {
+    padding-bottom: 0!important;
+}
+.stephen-corporate-links {
+    padding: 0 10% 0 10%;
+}
+
+.stephen-word-break-all {
+    word-break: break-all;
+}
+
+
+@media screen and (max-width:961px) {
+    #content{
+        margin: 1rem 1%;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .nav-links {
+        display: none;
+    }
+    #content{
+        justify-content: center;
+    }
+    .nav-toggle{
+        display: block;
+        float: right;
+    }
+    .top-header{
+        border: 1px solid pink;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 205px) {
+    .author, .date-posted{
+        margin: 2px 10%;        
+    }
+}
+
+
+
+@media (min-width:320px)  { 
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    #content {
+        border: 1px solid red;
+        box-sizing: content-box;
+        
+    }
+
+    .stephen-column-4 {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width:480px)  { 
+    /* smartphones, Android phones, landscape iPhone */
+
+    .stephen-column-4 {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        flex-basis: 20rem;
+    }
+
+}
+
+@media (min-width:600px)  { 
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+}
+
+@media (min-width:801px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+/* Edit: Refined to work better with 960 grids: */
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
